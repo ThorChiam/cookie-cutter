@@ -65,7 +65,7 @@ public class CookieCutterImageView extends ImageView {
     }
 
     private void onImageLoaded() {
-        cookieCutterParams.updateWithView(getWidth(), getHeight());
+        cookieCutterParams.updateWithView(getWidth()*2, getHeight()*2);
         setImageCentered();
         setOnTouchListener(new CookieCutterTouchListener(cookieCutterParams, getImageMatrix()));
     }
